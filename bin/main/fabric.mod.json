@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "testmod",
+  "version": "${version}",
+
+  "name": "Test Mod",
+  "description": "A mod where my ideas bloom to fruition",
+  "authors": [
+    "otaboard"
+  ],
+  "contact": {
+    "homepage": "https://otaboard.dev/",
+    "sources": "https://github.com/otaboard/test-mod"
+  },
+
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/testmod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "otaboard.test.mod.testMod"
+    ],
+    "client": [
+      "otaboard.test.mod.testModClient"
+    ]
+  },
+  "mixins": [
+    "testmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+  "accesswidener": "testmod.accesswidener"
+}

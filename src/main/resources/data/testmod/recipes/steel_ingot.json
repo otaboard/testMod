@@ -1,0 +1,8 @@
+{
+    "type": "testmod:test_furnace",
+    "ingredient": {
+        "item": "minecraft:iron_ingot"
+    },
+    "result": "testmod:steel_ingot",
+    "experience": "1"
+}
